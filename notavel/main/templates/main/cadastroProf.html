@@ -1,0 +1,37 @@
+{% extends "main/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Cadastro {% endblock %}</title>
+</head>
+<body>
+    {% block navtitle1 %} <a href="#">Cadastrar</a>{% endblock navtitle1 %}
+
+
+{% block content %}
+    <h2>Cadastrar Professor</h2>
+    <div class="form-container">
+        
+        <form method="POST">
+            {% csrf_token %}
+            {% for item in form %}
+                {{ item.errors }}
+                <label class="bar">{{item.label_tag}}</label><br>
+                {{item}}<br>
+                {% if field.help_text %}
+                    <p>{{ field.help_text|safe }}</p>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <button type="submit" name="save">Cadastrar</button>
+        </form>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

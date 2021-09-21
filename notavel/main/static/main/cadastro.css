@@ -1,0 +1,53 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+/*------------------ BUTTON ------------------*/
+button {
+    width: 70%;
+    height: 35px;
+
+    border: none;
+    color: var(--navbar);
+    background: var(--bad_bg);
+
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--headerbg);
+    
+}
+
+.button.cancel{
+    color: var(--navbar);
+    background-color: var(--bad_bg);
+    border-radius: 00.25rem;
+
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    
+}
+
+.button.cancel:hover{
+    background: var(--headerbg);
+}
+
+label {
+    color: var(--navbar);
+    font-size: large;
+}
+h2 {
+    color: var(--navbar);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

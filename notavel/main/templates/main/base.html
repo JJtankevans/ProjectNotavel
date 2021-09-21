@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/base.css' %}">
+    <link rel="stylesheet" href="{% static 'main/cadastro.css' %}">
+    <title>{% block title %} Login {% endblock %}</title>
+</head>
+<body>
+    
+    <header>
+        <img src="{% static 'images/Logo.png' %}" alt="Logo">
+        {% block navbar%}
+        <nav>
+            <ul>
+                <li>
+                    {% block navtitle1 %}<a href="#">Notas</a>{%endblock navtitle1%}
+                </li>
+                <li>
+                    <a href="#">Sobre o dev</a>
+                </li>
+            </ul>
+        </nav>
+        {% endblock navbar%}
+    </header>
+
+    {% block content %}
+
+    {% endblock content%}
+
+
+    <footer>
+        <p>© Notável<br>2021</p>
+    </footer>
+</body>
+</html>

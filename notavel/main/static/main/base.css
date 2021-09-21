@@ -1,0 +1,95 @@
+/*------------------ GLOBAL ------------------*/
+:root {
+    --background: #F8F1F1;
+    --navbar: #16C79A;
+    --headerbg: #11698E;
+    --bad_bg: #19456B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/*------------------ LINKS & BUTTONS ------------------*/
+
+a {
+    color: var(--navbar);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--headerbg);
+    opacity: 0.7;
+}
+/*------------------ HEADER ------------------*/
+header {
+    margin-top: -1.4rem;
+    margin-bottom: 4rem;
+    background-color: var(--headerbg);
+    text-align: center;
+    color: var(--background);
+}
+
+/*------------------ NAVBAR ------------------*/
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;    
+    background-color: var(--navbar); 
+}
+
+nav ul{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    font-size: 110%;
+}
+
+nav ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0.1rem 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--background);
+}
+
+nav a:hover {
+    color: var(--bad_bg);
+    opacity: 0.8;
+}
+/*------------------ FOOTER ------------------*/
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0 1rem;
+    color: var(--background);
+
+    background-color: var(--headerbg);
+}
